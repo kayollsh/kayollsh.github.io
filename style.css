@@ -1,24 +1,150 @@
-body {
-    background-color: lightblue;
-  }
+* {
   
-  h1 {
-    color: black;
-    text-align: center;
-  }
-  h2 {
-    color: black;
-    text-align: center;
-  }
-  h3 {
-    color: black;
-    text-align: center;
-  } 
-  a {
-    color: black;
-    text-align: center;
-  }
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+.urbanist> {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 5%;
+  background-color: #ffffff;
+}
+
+
+h1 
+ {
+  font-family: "Urbanist", sans-serif;
+  font-size: 2 em;
+  font-weight: 700;
+  color: #ed2121;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+h2
+ {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.33em;
+  font-weight: 400;
+  color: #000000;
+  text-decoration:none;
+  
+}
+h3
+ {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.33em;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+    /*border: 1px solid black;*/
+    background-color: rgb(255, 255, 255);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+h4
+ {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.33em;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+    /*border: 1px solid black;*/
+    background-color: rgb(255, 255, 255);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+p
+ {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.33em;
+  font-weight: 100;
+  color: #000000;
+  text-decoration:none;
+  text-indent: 30px;
+}
+.nav__links a
+ {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-size: 1 em;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #ef000c;
+}
+
+
+
+main
+{
+  display: contents;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #ffffff;
+}
+a> figure> img {
+  max-width: 100%;
+  height: auto;
+  vertical-align:middle;
+  display:inline-block;
+}
+.Previews_grid> a> figure> img{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.Previews_grid > a> figure > img {
+width: 100%;
+height: 100%;
+object-fit:cover;
+border-radius: 5px;
+
+}
+.Previews_grid {
+display: grid;
+grid-gap: 10px;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-auto-rows: auto;
+grid-auto-flow: dense;
+}
+.Previews_grid .wide {
+  grid-column: span 2;
+}
+.Previews_grid .tall {
+  grid-row: span 2;
+}
+.Previews_grid .big{
+  grid-column: span 3;
+  grid-row: span 2;
+}
