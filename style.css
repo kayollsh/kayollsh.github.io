@@ -19,7 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 5%;
-  background-color: #fff7e6;
+  background-color: #ffffff;
   
 }
 .icon {
@@ -186,7 +186,7 @@ grid-auto-flow: dense;
    font-size: 1 em;
    color: #d70606;
    text-decoration: none;
-   text-transform: lowercase;
+   text-transform: uppercase;
  }
   .nav__links {
     display: flex;
