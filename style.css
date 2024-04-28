@@ -11,7 +11,7 @@
 .urbanist {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight:weight;
   font-style: normal}
 
 header {
@@ -37,6 +37,7 @@ h1
   font-size: 2 em;
   font-weight: 700;
   color: #ed2121;
+  cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -46,18 +47,18 @@ h2
   font-size: 1.33em;
   font-weight: 400;
   color: #000000;
+  cursor: pointer;
   text-decoration:none;
   
 }
 h3
- { align-items: center;
-   display: flex;
-   padding: 0px 40%;
+ { 
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 600;
   font-size: 1.33em;
   color: #000000;
+  cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
     /*border: 1px solid black;*/
@@ -93,7 +94,7 @@ p
   font-family: "Urbanist", sans-serif;
   font-weight: 500;
   font-size: 1 em;
-  color: #000000;
+  color: #d70606;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -112,9 +113,15 @@ p
 }
 
 .nav__links li a:hover {
-  color: #ef000c;
+  color: #ffeeef;
 }
-
+.center {
+  display: block;
+  margin: auto;
+  width: 100%;
+    padding: 20px;
+  /*border: 3px solid #73AD21*/;
+}
 
 
 main
@@ -198,7 +205,6 @@ grid-auto-flow: dense;
   h3
  {
   font-family: "Montserrat", sans-serif;
-  text-align: center;
   font-weight: 600;
   font-size: 1.2em;
   color: #000000;
