@@ -186,7 +186,7 @@ grid-auto-flow: dense;
    font-size: 1 em;
    color: #d70606;
    text-decoration: none;
-   text-transform: uppercase;
+   text-transform: lowercase;
  }
   .nav__links {
     display: flex;
