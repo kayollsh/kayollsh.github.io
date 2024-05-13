@@ -22,14 +22,7 @@ header {
   background-color: #ffffff;
   
 }
-.icon {
-  position:absolute;
-  right: 5%;
-  font-size: 2.8em; 
-  color: #000000;
-  cursor: pointer;
-  display: none;
- }
+
 
 h1 
  {
@@ -75,20 +68,22 @@ h4
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-    /*border: 1px solid black;*/
+    border: 1px solid black;*/
     background-color: rgb(255, 255, 255);
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 p
  {
   font-family: "Urbanist", sans-serif;
-  font-size: 1.33em;
+  font-size: 1.2em;
   font-weight: 100;
   color: #000000;
   text-decoration:none;
-  text-indent: 30px;
+  text-indent: 10px;
 }
+
+
 .nav__links a
  {
   font-family: "Urbanist", sans-serif;
@@ -97,6 +92,7 @@ p
   color: #d70606;
   text-decoration: none;
   text-transform: uppercase;
+  
 }
 
 .nav__links {
@@ -166,6 +162,36 @@ grid-auto-flow: dense;
   grid-column: span 2;
   grid-row: span 2;
 }
+.project-grid {
+  padding-block: 3em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+  grid-gap: 1em;
+}
+.video > div{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  padding-top: 3em;
+}
+.project-description > div{
+  display: grid;
+  padding-bottom: 1em;
+  padding-right: 1em;
+}
+.project-grid > div{
+
+  background-color: #dec9c9;
+  }
+.project-images{
+  grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
+}
+
+.project-images> div{
+
+  display: grid;
+  padding-top: 3em;
+  background-color: #b87070;
+}
 
 @media only screen and (min-width: 390px) {
   .overlay a {
@@ -195,6 +221,11 @@ grid-auto-flow: dense;
    text-decoration: none;
    text-transform: lowercase;
  }
+ .project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;}
+
   .nav__links {
     display: flex;
     position: absolute;
