@@ -165,12 +165,11 @@ grid-auto-flow: dense;
 .project-grid {
   padding-block: 3em;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1em;
 }
 .video > div{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  display: flex;
   padding-top: 3em;
 }
 .project-description > div{
@@ -183,15 +182,28 @@ grid-auto-flow: dense;
   background-color: #dec9c9;
   }
 .project-images{
-  grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
+  padding-block: 3em;
+  display: contents;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.project-images> div{
-
-  display: grid;
-  padding-top: 3em;
-  background-color: #b87070;
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 100%;
+  padding: 1em;
 }
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
 
 @media only screen and (min-width: 390px) {
   .overlay a {
