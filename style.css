@@ -236,11 +236,8 @@ main
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1em;
 }
-.responsive-image {
-  width: 100%;
-  max-width: 320px;
-  height: auto;
-}
+
+
 .video {
   position: relative;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
@@ -373,7 +370,7 @@ main
   {
    font-family: "Urbanist", sans-serif;
    font-weight: 400;
-   font-size: 19px;
+   font-size: 18px;
    color: #d70606;
    text-decoration: none;
    text-transform: lowercase;
@@ -383,7 +380,7 @@ main
   position: absolute;
   top: 110px;
   left: 0;
-  width: 100%;
+  width: 90%;
 }
  .project-grid {
   display: grid;
