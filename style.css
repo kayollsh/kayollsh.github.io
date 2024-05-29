@@ -236,6 +236,11 @@ main
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1em;
 }
+.responsive-image {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
 .video {
   position: relative;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
@@ -318,7 +323,7 @@ main
   width: 100%;
 }
 
-@media only screen and (min-width: 490px) {
+@media only screen and (min-width: 390px) {
   .overlay a {
     font-size: 20px;
   }
@@ -332,11 +337,11 @@ main
   }
   body 
   {
-    background-color: red;
+   /* background-color: red;*/
   }
 }
 
-@media  (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   header
   {
     padding:  1.3em 5%;
@@ -349,7 +354,7 @@ main
     max-width: 33%;}
     body 
   {
-    background-color: green;
+    /*background-color: green;*/
   }
 }
 @media only screen and (max-width: 768px) {
@@ -360,31 +365,32 @@ main
       flex: 100%;
       max-width: 100%;} 
       body 
+      
   {
-    background-color: yellow;
+    /*background-color: yellow;*/
   }   
   .nav__links a
   {
    font-family: "Urbanist", sans-serif;
-   font-weight: 500;
-   font-size: 1.5 em;
+   font-weight: 400;
+   font-size: 19px;
    color: #d70606;
    text-decoration: none;
    text-transform: lowercase;
  }
- 
+ .nav__links {
+  display: flex;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  width: 100%;
+}
  .project-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em;}
 
-  .nav__links {
-    display: flex;
-    position: absolute;
-    top: 110px;
-    left: 0;
-    width: 100%;
-  }
+
   h3
  {
   font-family: "Montserrat", sans-serif;
