@@ -101,17 +101,24 @@ p
   font-family: "Urbanist", sans-serif;
   font-size: 1.33em;
   font-weight: 400;
+  line-height: 150%;
   font-style: normal;
   color: #000000;
   text-decoration:none;
  
 }
 
-
+.font-grey {
+  color: #5c5c5c;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Urbanist', sans-serif;
+  text-indent: 0px;}
 .font-red {
   color: #e82121;
   font-weight: 500;
-  font-size: 18px;
+  line-height: 100%;
+  font-size: 20px;
   font-family: 'Urbanist', sans-serif;
   text-indent: 0px;
 }
