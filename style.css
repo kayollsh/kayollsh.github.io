@@ -368,11 +368,12 @@ footer{
 }
 .footerNav ul li a{
   font-family: "Urbanist", sans-serif;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 400;
   font-style: normal;
   color: #a00a0a;
   text-decoration:none;
+  text-align: center;
   margin: 20px;
   opacity: 0.7;
   transition: 0.5s;
@@ -388,10 +389,11 @@ footer{
 }
 .footerBottom p{
   color: rgb(99, 78, 78);
+  font-size: 19px;
 }
 .designer{
   font-family: "Urbanist", sans-serif;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
   color: #d29797;
   cursor: pointer;
